@@ -1,7 +1,7 @@
 with order_item_grouped_by_order as (
 
 select order_id,
-    user_id,
+    user_id AS user_id,
     order_status,
     order_created_at,
     order_approved_at,
