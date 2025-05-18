@@ -1,6 +1,5 @@
 WITH monthly_users_recap AS (
 
-
 SELECT DATE_TRUNC(order_date,month) AS order_month,
 COUNT(DISTINCT user_name) AS total_monthly_users
 FROM {{ source('sales_database', 'order')}}
